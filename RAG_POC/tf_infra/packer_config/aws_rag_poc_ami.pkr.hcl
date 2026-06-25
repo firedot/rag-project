@@ -21,7 +21,7 @@ variable "aws_secret_key" {
 source "amazon-ebs" "rag_poc" {
   access_key    = var.aws_access_key
   secret_key    = var.aws_secret_key
-  ssh_username  = "ragbuntu"
+  ssh_username  = "ubuntu"
   ami_name      = "rag_poc_ami"
   instance_type = "t2.micro"
   region        = "eu-central-1"
