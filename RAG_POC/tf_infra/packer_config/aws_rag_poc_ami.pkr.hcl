@@ -26,6 +26,7 @@ source "amazon-ebs" "rag_poc" {
   instance_type = "t2.micro"
   region        = "eu-central-1"
   source_ami    = "ami-042dc8681de073ac4"
+  skip_create_ami = true
 }
 
 build {
